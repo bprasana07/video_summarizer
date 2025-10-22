@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Logging configuration
 logging.basicConfig(
-    filename="/home/yourusername/video_summarizer/flask_debug.log",
+    filename="/home/bprasana85/video_summarizer/flask_debug.log",
     level=logging.DEBUG,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
