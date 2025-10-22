@@ -1,0 +1,7 @@
+services:
+  web:
+    build:
+      dockerfile: Dockerfile  # optional if you use Docker
+    start: gunicorn app:app
+    env:
+      FLASK_ENV: production
