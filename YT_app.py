@@ -48,4 +48,4 @@ def index():
     return render_template_string(HTML_TEMPLATE, summary=summary, filename=filename)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
