@@ -1,0 +1,29 @@
+In this YouTube video, Krushnayak discusses the deployment of an end-to-end project using AWS Elastic Beanstalk and CodePipeline. Key points include:
+
+1. **Project Deployment Importance**: Emphasizes the significance of discussing deployment techniques and CI/CD pipelines in job interviews.
+
+2. **Deployment Techniques**: The video focuses on deploying applications using AWS Elastic Beanstalk, starting with simpler methods before moving to more complex ones.
+
+3. **Configuration Setup**: 
+   - Discusses the creation of a `.ebextensions` directory and a `python.config` file to specify the application entry point.
+   - Highlights the need to remove debug settings before deployment.
+
+4. **Git Integration**: 
+   - Demonstrates how to commit changes to a GitHub repository and push code for deployment.
+   - Explains the setup of a CodePipeline to automate deployment from GitHub to Elastic Beanstalk.
+
+5. **Creating Elastic Beanstalk Application**: 
+   - Walks through creating an Elastic Beanstalk application and environment, selecting Python as the platform.
+
+6. **CodePipeline Setup**: 
+   - Guides viewers through creating a CodePipeline that connects to the GitHub repository and deploys the application to Elastic Beanstalk.
+
+7. **Deployment Process**: 
+   - Describes the steps to deploy the application and troubleshoot issues, such as ensuring the correct file names are used.
+
+8. **Final Deployment**: 
+   - Confirms successful deployment and demonstrates the application running on AWS.
+
+9. **Future Content**: Mentions upcoming videos on CI/CD pipelines and encourages viewers to subscribe and share the content.
+
+Overall, the video serves as a practical guide for deploying applications on AWS, emphasizing the importance of understanding deployment processes for career advancement.

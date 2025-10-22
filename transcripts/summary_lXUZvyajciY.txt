@@ -1,0 +1,7 @@
+In a conversation with Andrej Karpathy, he discusses the future of AI, particularly the evolution of agents and their capabilities. He argues that this will be the "decade of agents" rather than just a year, emphasizing the need for significant advancements in areas like continual learning and multimodality. Karpathy highlights the current limitations of AI agents, such as their lack of intelligence and inability to perform complex tasks autonomously.
+
+He reflects on the history of AI, noting past missteps in focusing too early on agent development without foundational technologies like large language models (LLMs). He believes that while AI has made strides, it still lacks the cognitive abilities found in humans, particularly in areas like reasoning and emotional understanding.
+
+Karpathy also discusses the challenges of creating effective AI education, emphasizing the importance of personalized learning experiences akin to having a good tutor. He envisions a future where AI can assist in education, but acknowledges that current models are not yet capable of providing the depth of understanding that a human tutor can.
+
+He expresses optimism about the potential for AI to enhance productivity and learning, but cautions against overestimating its current capabilities. Karpathy concludes by discussing his current focus on building an educational platform, aiming to create a system that fosters deep understanding and engagement in learning, similar to how physical training has evolved in society.

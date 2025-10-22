@@ -1,0 +1,15 @@
+In this YouTube video, the host demonstrates how to deploy a Python Flask application using AWS Elastic Beanstalk. Key points include:
+
+1. **Application Setup**: The host prepares a simple Flask application with an `application.py` file containing basic routes and a `requirements.txt` file for dependencies.
+
+2. **Environment Creation**: The host navigates to the AWS Elastic Beanstalk console to create a new environment for the application, selecting a unique domain name and the latest Python version (3.11).
+
+3. **Code Upload**: The application code is bundled and uploaded either as a local file or via an S3 URL. The host opts for a local file upload.
+
+4. **Deployment Process**: After configuring the environment settings, the host submits the deployment. The environment creation process is monitored, and the application is successfully deployed.
+
+5. **Testing and Versioning**: Once deployed, the application is tested, confirming it returns the expected output. The host demonstrates how to update the application by creating a new version (2.0) and redeploying it.
+
+6. **Future Content**: The video concludes with a mention of exploring additional options within the environment in future videos and encourages viewers to subscribe for more AWS-related content.
+
+Overall, the video serves as a practical guide for deploying and managing a Flask application on AWS Elastic Beanstalk.
