@@ -4,8 +4,27 @@ from Youtube_transcript_translate import (
     extract_video_id, get_video_title, get_transcript, 
     translate_transcript, format_transcript, summarize_basic, save_transcript
 )
-
+import os
 app = Flask(__name__)
+
+TRANSCRIPTS_DIR = "/home/bprasana85/video_summarizer/transcripts"
+os.makedirs(TRANSCRIPTS_DIR, exist_ok=True)
+
+HTML_TEMPLATE = """
+<!doctype html>
+<title>YouTube Transcript Summarizer</title>
+<h1>YouTube Transcript Summarizer</h1>
+<form method=post>
+  YouTube URL or Video ID: <input type=text name=url>
+  <input type=submit value=Submit>
+</form>
+{% if summary %}
+<h2>Summary:</h2>
+<pre>{{ summary }}</pre>
+<p>Transcript saved to: {{ filename }}</p>
+{% endif %}
+"""
+
 
 # Logging configuration
 logging.basicConfig(
@@ -42,7 +61,7 @@ def index():
                 logging.warning("Transcript not fetched")
         else:
             logging.warning("Invalid video ID extracted")
-    return render_template_string("<h1>Check logs for debug info</h1>")
+    return render_template_string(HTML_TEMPLATE, summary=summary, filename=filename)
 
 
 if __name__ == "__main__":
