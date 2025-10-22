@@ -109,10 +109,12 @@ def summarize_basic(text):
     summary = "\n\n".join(key_sentences)
     return f"Key Points from Transcript:\n\n{summary}\n\n(Note: Basic summary, no AI.)"
 
-def save_transcript(video_title, video_id, source_lang, was_translated, summary, full_transcript):
-    os.makedirs("transcripts", exist_ok=True)
+def save_transcript(video_title, video_id, source_lang, was_translated, summary, full_transcript, dir_path=None):
+    if dir_path is None:
+        dir_path = os.path.join(os.getcwd(), "transcripts")
+    os.makedirs(dir_path, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"transcripts/{video_title}_{timestamp}.txt"
+    filename = os.path.join(dir_path, f"{video_title}_{timestamp}.txt")
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(f"YouTube Video: {video_title}\n")
         f.write(f"Video ID: {video_id}\n")
